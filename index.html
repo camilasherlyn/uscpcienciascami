@@ -1,81 +1,203 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camila Sherlyn Ayamamani Hinojosa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
+<title>Camila Sherlyn Ayamamani Hinojosa</title>
 
-        body{
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            margin: 0;
-            padding: 0;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        header{
-            background-color: #002855;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-        section{
-            background-color: white;
-            margin: 20px;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0px 0px 10px gray;
-        }
+<style>
 
-        h2{
-            color: #002855;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        ul{
-            line-height: 1.8;
-        }
+body{
+    font-family:'Poppins',sans-serif;
 
-        a{
-            color: #0066cc;
-            text-decoration: none;
-        }
+    background:
+    linear-gradient(rgba(255,240,246,.85),rgba(255,240,246,.85)),
+    url("https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=1200");
 
-        a:hover{
-            color: red;
-        }
+    background-size:cover;
+    background-attachment:fixed;
 
-    </style>
+    color:#7d4f65;
+}
+
+/* Gatito */
+body::after{
+content:"🐱";
+position:fixed;
+right:30px;
+bottom:25px;
+font-size:70px;
+opacity:0.25;
+animation:flotar 4s infinite ease-in-out;
+}
+
+@keyframes flotar{
+0%{transform:translateY(0);}
+50%{transform:translateY(-12px);}
+100%{transform:translateY(0);}
+}
+
+header{
+background:rgba(255,192,203,.85);
+backdrop-filter:blur(8px);
+text-align:center;
+padding:40px;
+box-shadow:0 0 20px pink;
+animation:aparecer 2s;
+}
+
+h1{
+font-size:45px;
+color:#8d5470;
+}
+
+h3{
+margin-top:10px;
+}
+
+section{
+background:rgba(255,255,255,.8);
+backdrop-filter:blur(10px);
+
+width:85%;
+margin:30px auto;
+padding:30px;
+
+border-radius:30px;
+
+box-shadow:0px 0px 20px #e8b8c8;
+
+transition:0.5s;
+
+animation:subir 1.5s;
+}
+
+section:hover{
+transform:scale(1.02);
+}
+
+h2{
+color:#c06c84;
+margin-bottom:15px;
+}
+
+ul{
+line-height:2;
+}
+
+a{
+text-decoration:none;
+color:#ff4f9a;
+font-weight:bold;
+transition:.4s;
+}
+
+a:hover{
+color:#ff1493;
+padding-left:8px;
+}
+
+footer{
+background:rgba(255,192,203,.85);
+text-align:center;
+padding:30px;
+margin-top:30px;
+}
+
+.boton{
+display:inline-block;
+background:#ff8fb1;
+padding:12px 22px;
+border-radius:25px;
+color:white;
+margin-top:15px;
+transition:.5s;
+}
+
+.boton:hover{
+background:#ff69b4;
+transform:translateY(-5px);
+}
+
+@keyframes aparecer{
+from{
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
+
+@keyframes subir{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0px);
+}
+}
+
+li{
+transition:.4s;
+}
+
+li:hover{
+transform:translateX(10px);
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
 
-<h1>Camila Sherlyn Ayamamani Hinojosa</h1>
+<h1>🌸 Camila Sherlyn Ayamamani Hinojosa 🌸</h1>
 
 <h3>Estudiante de la Universidad Católica San Pablo</h3>
 
-<p>
-<a href="https://www.linkedin.com/in/camila-ayamamani-hinojosa-2a847b418/" target="_blank" style="color:white;">
-Mi LinkedIn
+<br>
+
+<a class="boton"
+href="https://www.linkedin.com/in/camila-ayamamani-hinojosa-2a847b418/"
+target="_blank">
+LinkedIn
 </a>
-</p>
 
 </header>
 
 
 <section>
 
-<h2>Sobre mí</h2>
+<h2>🌷 Sobre mí</h2>
 
 <p>
+
 Soy estudiante de la carrera Ciencia de la Computación en la Universidad Católica San Pablo.
+
 Además, estudio Odontología en la Universidad San Martín de Porres.
+
 Me apasionan mucho los idiomas, especialmente el inglés, italiano y francés.
-Me gustaría especializarme en el desarrollo de videojuegos y, respecto a odontología,
-me gustaría ser Cirujana Maxilofacial y docente.
+
+Me gustaría especializarme en el desarrollo de videojuegos y respecto a odontología me gustaría ser Cirujana Maxilofacial y docente.
+
 </p>
 
 </section>
@@ -83,7 +205,7 @@ me gustaría ser Cirujana Maxilofacial y docente.
 
 <section>
 
-<h2>Formación Académica</h2>
+<h2>🎓 Formación Académica</h2>
 
 <h3>Colegios</h3>
 
@@ -91,7 +213,7 @@ me gustaría ser Cirujana Maxilofacial y docente.
 
 <li>
 <a href="https://ielourdes.edu.pe/" target="_blank">
-I.E. Nuestra Señora de Lourdes
+I.E Nuestra Señora de Lourdes
 </a>
 </li>
 
@@ -103,6 +225,7 @@ Sir Alexander Fleming
 
 </ul>
 
+<br>
 
 <h3>Universidades</h3>
 
@@ -122,8 +245,9 @@ Universidad San Martín de Porres
 
 </ul>
 
+<br>
 
-<h3>Lengua Extranjera</h3>
+<h3>Lengua extranjera</h3>
 
 <ul>
 
@@ -140,53 +264,49 @@ Asociación Cultural Peruano Británico
 
 <section>
 
-<h2>Cursos y Profesores</h2>
+<h2>📚 Cursos y Profesores</h2>
 
 <ul>
 
 <li>
-<b>Fundamentos de Programación</b><br>
+Fundamentos de Programación
+<br>
 <a href="https://www.linkedin.com/in/kelly-vizconde-la-motta-3a57a4143/" target="_blank">
 Kelly Vizconde La Motta
 </a>
 </li>
 
-<br>
-
 <li>
-<b>Introducción a Computación</b><br>
+Introducción a Computación
+<br>
 <a href="https://www.linkedin.com/in/ecuadrosv" target="_blank">
 Ernesto Cuadros-Vargas
 </a>
 </li>
 
-<br>
-
 <li>
-<b>Fundamentos Matemáticos para Computación</b><br>
+Fundamentos Matemáticos para Computación
+<br>
 Fiorella María Rendón García
 </li>
 
-<br>
-
 <li>
-<b>Comunicación I</b><br>
+Comunicación I
+<br>
 Lourdes Eliana Velarde Ortiz
 </li>
 
-<br>
-
 <li>
-<b>Lógica</b><br>
+Lógica
+<br>
 <a href="https://pe.linkedin.com/in/solange-tejada" target="_blank">
 Solange Ximena Tejada Cuadros
 </a>
 </li>
 
-<br>
-
 <li>
-<b>Introducción a la Vida Universitaria</b><br>
+Introducción a la Vida Universitaria
+<br>
 Pierina Pacheco Leyton
 </li>
 
@@ -197,17 +317,17 @@ Pierina Pacheco Leyton
 
 <section>
 
-<h2>Intereses</h2>
+<h2>💖 Intereses</h2>
 
 <ul>
-<li>Inglés</li>
-<li>Italiano</li>
-<li>Francés</li>
-<li>Python</li>
-<li>Java</li>
-<li>Teatro</li>
-<li>Destreza y Arte Dental</li>
-<li>Tecnología e Innovación Médica</li>
+<li>🇬🇧 Inglés</li>
+<li>🇮🇹 Italiano</li>
+<li>🇫🇷 Francés</li>
+<li>🐍 Python</li>
+<li>☕ Java</li>
+<li>🎭 Teatro</li>
+<li>🦷 Destreza y Arte Dental</li>
+<li>💻 Tecnología e Innovación Médica</li>
 </ul>
 
 </section>
@@ -215,28 +335,72 @@ Pierina Pacheco Leyton
 
 <section>
 
-<h2>Compañeros</h2>
+<h2>📩 Contacto</h2>
+
+<p><b>Correo:</b> camila.ayamamani@ucsp.edu.pe</p>
+
+<br>
+
+<a class="boton"
+href="https://www.instagram.com/laly_.ah/"
+target="_blank">
+Instagram: @laly_.ah
+</a>
+
+</section>
+
+
+<section>
+
+<h2>👩‍💻 Compañeros</h2>
 
 <ul>
 
 <li>
-Nombre del compañero 1 -
-<a href="https://github.com/" target="_blank">
-Página web
+<a href="https://flavio-hc.github.io/pagina-personal/" target="_blank">
+Flavio Alessandro Yazid Hancco Chaiña
 </a>
 </li>
 
 <li>
-Nombre del compañero 2 -
-<a href="https://github.com/" target="_blank">
-Página web
+<a href="https://lorian0x.github.io/" target="_blank">
+Fabrizio Alessandro Ocsa Sanchez
 </a>
 </li>
 
 <li>
-Nombre del compañero 3 -
-<a href="https://github.com/" target="_blank">
-Página web
+<a href="https://w4nd4r1.github.io/Ariana-Yasmin-Delgado-Arce/" target="_blank">
+Ariana Yasmín Delgado Arce
+</a>
+</li>
+
+<li>
+<a href="https://aaronhumpiri.github.io/" target="_blank">
+Aaron Humpiri Obregon
+</a>
+</li>
+
+<li>
+<a href="https://kenya-sq.github.io/Kenya-Shupingahua-Quiroz/" target="_blank">
+Kenya Magdiel Shupingahua Quiroz
+</a>
+</li>
+
+<li>
+<a href="https://andrew-oremour.github.io/" target="_blank">
+Andree Fabiano Huamani Pizarro
+</a>
+</li>
+
+<li>
+<a href="https://kathe-fac.github.io/" target="_blank">
+Katheryne Flor Aimituma Ccallo
+</a>
+</li>
+
+<li>
+<a href="https://wesudobones.github.io/page/" target="_blank">
+Christopher Alexander Osnayo Mamani
 </a>
 </li>
 
@@ -245,13 +409,16 @@ Página web
 </section>
 
 
-<footer style="background-color:#002855;color:white;text-align:center;padding:20px;">
+<footer>
 
-<h3>Camila Sherlyn Ayamamani Hinojosa</h3>
+<h3>🌸 Camila Sherlyn Ayamamani Hinojosa 🌸</h3>
 
-<p>Ciencia de la Computación | Universidad Católica San Pablo</p>
+<br>
+
+Ciencia de la Computación | Universidad Católica San Pablo
 
 </footer>
 
 </body>
 </html>
+```
